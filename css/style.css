@@ -1896,4 +1896,1402 @@ section{
 
         90deg,
 
-  
+        var(--primary),
+
+        var(--secondary)
+
+    );
+
+    border-radius:50px;
+
+    animation:skillLoad 1.5s ease;
+
+}
+
+
+
+@keyframes skillLoad{
+
+    from{
+
+        width:0;
+
+    }
+
+}
+
+
+
+
+/*==================================================
+            RESPONSIVE
+==================================================*/
+
+
+@media(max-width:992px){
+
+
+.skills-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+.skills-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.skill-card{
+
+    padding:28px;
+
+}
+
+
+}/*==================================================
+            LEARNING SECTION
+==================================================*/
+
+
+.learning-section{
+
+    background:#101010;
+
+}
+
+
+
+.learning-section .skill-card{
+
+    text-align:center;
+
+}
+
+
+
+.learning-section .skill-card h3{
+
+    font-size:1.6rem;
+
+}
+
+
+
+/*==================================================
+            CTA IMPROVEMENT
+==================================================*/
+
+
+.contact-cta{
+
+    padding:100px 0;
+
+}
+
+
+
+.cta-box{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.cta-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+
+    height:250px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-100px;
+
+    right:-80px;
+
+}
+
+
+
+.cta-box h2,
+
+.cta-box p,
+
+.cta-box a{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+/*==================================================
+            SKILL ANIMATION
+==================================================*/
+
+
+.skill-card{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    animation:skillAppear .8s ease forwards;
+
+}
+
+
+
+.skill-card:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+
+
+.skill-card:nth-child(3){
+
+    animation-delay:.4s;
+
+}
+
+
+
+@keyframes skillAppear{
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/*==================================================
+            SMALL SCREEN FIXES
+==================================================*/
+
+
+@media(max-width:480px){
+
+
+.skills-section,
+.design-skills,
+.tools-section,
+.learning-section{
+
+    padding:70px 0;
+
+}
+
+
+.skill-card h3{
+
+    font-size:1.3rem;
+
+}
+
+
+.skill-card p{
+
+    font-size:.95rem;
+
+}
+
+
+.cta-box{
+
+    padding:45px 20px;
+
+}
+
+
+.cta-box h2{
+
+    font-size:1.8rem;
+
+}
+
+
+}
+/*==================================================
+            CERTIFICATES PAGE
+==================================================*/
+
+
+.certificate-section{
+
+    padding:100px 0;
+
+}
+
+
+
+.certificate-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.certificate-card{
+
+    background:var(--surface);
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    border:1px solid transparent;
+
+}
+
+
+
+.certificate-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+}
+
+
+
+/* CERTIFICATE IMAGE */
+
+
+.certificate-image{
+
+    width:100%;
+
+    height:260px;
+
+    overflow:hidden;
+
+}
+
+
+
+.certificate-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s ease;
+
+}
+
+
+
+.certificate-card:hover 
+.certificate-image img{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+/* CERTIFICATE CONTENT */
+
+
+.certificate-content{
+
+    padding:30px;
+
+}
+
+
+
+.certificate-content h3{
+
+    font-size:1.6rem;
+
+    margin-bottom:15px;
+
+    color:var(--primary);
+
+}
+
+
+
+.certificate-content p{
+
+    color:var(--text-light);
+
+    line-height:1.7;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.issuer{
+
+    font-size:.95rem;
+
+}
+
+
+
+.issuer strong{
+
+    color:var(--secondary);
+
+}
+/*==================================================
+        CERTIFICATES RESPONSIVE DESIGN
+==================================================*/
+
+
+@media(max-width:992px){
+
+
+    .certificate-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+    .certificate-section{
+
+        padding:70px 0;
+
+    }
+
+
+    .certificate-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .certificate-card{
+
+        max-width:500px;
+
+        margin:auto;
+
+    }
+
+
+    .certificate-image{
+
+        height:230px;
+
+    }
+
+
+    .certificate-content{
+
+        padding:25px;
+
+    }
+
+
+    .certificate-content h3{
+
+        font-size:1.4rem;
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:480px){
+
+
+    .certificate-image{
+
+        height:200px;
+
+    }
+
+
+    .certificate-content p{
+
+        font-size:.95rem;
+
+    }
+
+
+    .certificate-content .btn{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+
+}
+/*==================================================
+            MEDIA SHOWCASE PAGE
+==================================================*/
+
+
+.media-showcase,
+.youtube-section,
+.social-media{
+
+    padding:100px 0;
+
+}
+
+
+
+
+/* MEDIA GRID */
+
+
+.media-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+
+
+
+/* MEDIA CARD */
+
+
+.media-card,
+.social-card{
+
+    background:var(--surface);
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    border:1px solid transparent;
+
+}
+
+
+
+.media-card:hover,
+.social-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+}
+
+
+
+.media-card h3,
+.social-card h3{
+
+    color:var(--primary);
+
+    font-size:1.5rem;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.media-card p,
+.social-card p{
+
+    color:var(--text-light);
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+/* VIDEO */
+
+
+.video-container{
+
+    width:100%;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    margin-top:25px;
+
+}
+
+
+
+.video-container video{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+
+
+/* AUDIO */
+
+
+.audio-container{
+
+    margin-top:25px;
+
+}
+
+
+
+.audio-container audio{
+
+    width:100%;
+
+}
+
+
+
+
+
+/* YOUTUBE */
+
+
+.youtube-wrapper{
+
+    position:relative;
+
+    width:100%;
+
+    padding-bottom:56.25%;
+
+    height:0;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+}
+
+
+
+.youtube-wrapper iframe{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    left:0;
+
+    top:0;
+
+    border:0;
+
+}
+
+
+
+
+
+/* SOCIAL GRID */
+
+
+.social-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+/*==================================================
+        MEDIA RESPONSIVE DESIGN
+==================================================*/
+
+
+@media(max-width:992px){
+
+
+    .social-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+    .media-showcase,
+    .youtube-section,
+    .social-media{
+
+        padding:70px 0;
+
+    }
+
+
+
+    .media-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .social-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .media-card,
+    .social-card{
+
+        padding:25px;
+
+    }
+
+
+
+    .youtube-wrapper{
+
+        border-radius:18px;
+
+    }
+
+
+}
+
+
+
+
+
+@media(max-width:480px){
+
+
+    .media-card h3,
+    .social-card h3{
+
+        font-size:1.3rem;
+
+    }
+
+
+
+    .media-card p,
+    .social-card p{
+
+        font-size:.95rem;
+
+    }
+
+
+}
+/*==================================================
+            JOURNEY PAGE
+==================================================*/
+
+
+.journey-section,
+.goals-section{
+
+    padding:100px 0;
+
+}
+
+
+
+/*==================================================
+            TIMELINE
+==================================================*/
+
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:60px auto 0;
+
+}
+
+
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:3px;
+
+    height:100%;
+
+    background:var(--primary);
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+
+
+.timeline-item{
+
+    position:relative;
+
+    width:50%;
+
+    padding:25px 40px;
+
+}
+
+
+
+.timeline-item:nth-child(odd){
+
+    left:0;
+
+    text-align:right;
+
+}
+
+
+
+.timeline-item:nth-child(even){
+
+    left:50%;
+
+}
+
+
+
+.timeline-dot{
+
+    position:absolute;
+
+    width:18px;
+
+    height:18px;
+
+    background:var(--primary);
+
+    border-radius:50%;
+
+    top:35px;
+
+    right:-9px;
+
+    box-shadow:0 0 15px var(--primary);
+
+}
+
+
+
+.timeline-item:nth-child(even) 
+.timeline-dot{
+
+    left:-9px;
+
+}
+
+
+
+
+/*==================================================
+            TIMELINE CONTENT
+==================================================*/
+
+
+.timeline-content{
+
+    background:var(--surface);
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+    border:1px solid transparent;
+
+    transition:var(--transition);
+
+}
+
+
+
+.timeline-content:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+}
+
+
+
+.timeline-year{
+
+    color:var(--primary);
+
+    font-weight:bold;
+
+    font-size:1.2rem;
+
+}
+
+
+
+.timeline-content h3{
+
+    margin:15px 0;
+
+    font-size:1.5rem;
+
+}
+
+
+
+.timeline-content p{
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+}
+/*==================================================
+            FUTURE GOALS
+==================================================*/
+
+
+.goals-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.goal-card{
+
+    background:var(--surface);
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+    border:1px solid transparent;
+
+    transition:var(--transition);
+
+}
+
+
+
+.goal-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+}
+
+
+
+.goal-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+    font-size:1.4rem;
+
+}
+
+
+
+.goal-card p{
+
+    color:var(--text-light);
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+/*==================================================
+            MOBILE TIMELINE
+==================================================*/
+
+
+@media(max-width:768px){
+
+
+
+    .journey-section,
+    .goals-section{
+
+        padding:70px 0;
+
+    }
+
+
+
+
+    .timeline::before{
+
+        left:10px;
+
+    }
+
+
+
+
+    .timeline-item{
+
+        width:100%;
+
+        left:0 !important;
+
+        padding-left:45px;
+
+        padding-right:0;
+
+        text-align:left;
+
+    }
+
+
+
+
+    .timeline-dot{
+
+        left:1px !important;
+
+        right:auto;
+
+    }
+
+
+
+
+    .timeline-content{
+
+        padding:25px;
+
+    }
+
+
+
+
+    .goals-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+}
+
+
+
+
+@media(max-width:480px){
+
+
+
+    .timeline-content h3{
+
+        font-size:1.3rem;
+
+    }
+
+
+
+    .timeline-content p{
+
+        font-size:.95rem;
+
+    }
+
+
+
+    .goal-card{
+
+        padding:25px;
+
+    }
+
+
+
+}
+/*==================================================
+            CONTACT PAGE
+==================================================*/
+
+
+.contact-section{
+
+    padding:100px 0;
+
+}
+
+
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:50px;
+
+    align-items:start;
+
+}
+
+
+
+
+/* CONTACT INFO */
+
+
+.contact-info h2{
+
+    font-size:2.5rem;
+
+    margin:20px 0;
+
+}
+
+
+
+.contact-info p{
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.contact-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.contact-links a{
+
+    color:var(--text-light);
+
+    font-size:1.1rem;
+
+    transition:.3s;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+
+.contact-links .icon-instagram,
+
+.contact-links .icon-github,
+
+.contact-links .icon-email{
+
+    flex-shrink:0;
+
+}
+
+
+
+.contact-links a:hover{
+
+    color:var(--primary);
+
+}
+
+
+
+
+/*==================================================
+            CONTACT FORM
+==================================================*/
+
+
+.contact-form{
+
+    background:var(--surface);
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+
+.input-group{
+
+    margin-bottom:25px;
+
+}
+
+
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:white;
+
+}
+
+
+
+.input-group input,
+.input-group textarea{
+
+
+    width:100%;
+
+    padding:15px;
+
+    background:#161616;
+
+    border:1px solid #333;
+
+    border-radius:12px;
+
+    color:white;
+
+    font-size:1rem;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+
+
+.input-group input:focus,
+.input-group textarea:focus{
+
+    border-color:var(--primary);
+
+}
+
+
+
+
+.input-group textarea{
+
+    resize:none;
+
+}
+/*==================================================
+        CONTACT RESPONSIVE DESIGN
+==================================================*/
+
+
+@media(max-width:992px){
+
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+    .contact-section{
+
+        padding:70px 0;
+
+    }
+
+
+
+    .contact-info h2{
+
+        font-size:2rem;
+
+    }
+
+
+
+    .contact-form{
+
+        padding:30px 25px;
+
+    }
+
+
+
+}
+
+
+
+
+
+@media(max-width:480px){
+
+
+    .contact-info h2{
+
+        font-size:1.7rem;
+
+    }
+
+
+
+    .contact-links a{
+
+        font-size:.95rem;
+
+    }
+
+
+
+    .contact-form{
+
+        padding:25px 20px;
+
+    }
+
+
+
+    .input-group input,
+    .input-group textarea{
+
+        padding:13px;
+
+    }
+
+
+
+}
